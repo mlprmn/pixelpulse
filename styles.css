@@ -8,9 +8,11 @@ body {
 header {
     text-align: center;
     padding: 2em;
+    background-color: #1b263b;
 }
 #logo {
     width: 150px;
+    animation: pulse 3s infinite;
 }
 h1 {
     font-size: 2.5em;
@@ -24,9 +26,13 @@ h1 {
 }
 main {
     padding: 2em;
+    background-color: #0d1b2a;
 }
-.intro, .services, .contact {
+.intro, .services, .booking, .upload, .tracking, .chat, .legal, .contact {
     margin-bottom: 2em;
+    background-color: #1b263b;
+    padding: 1.5em;
+    border-radius: 10px;
 }
 ul {
     list-style-type: none;
@@ -45,46 +51,29 @@ footer {
     text-align: center;
     padding: 1em;
     font-size: 0.9em;
+    color: #e0e1dd;
 }
-
-.chat, .legal {
-    margin-bottom: 2em;
-    padding: 1em;
-    background-color: #1b263b;
-    border-radius: 8px;
-}
-.chat button {
+button {
     background-color: #ffd700;
+    color: #0d1b2a;
     border: none;
     padding: 0.6em 1.2em;
     font-size: 1em;
     cursor: pointer;
     border-radius: 4px;
-    color: #0d1b2a;
 }
-.chat button:hover {
+button:hover {
     background-color: #ffcc00;
 }
-.legal p {
-    margin: 0.5em 0;
-    line-height: 1.5em;
+input, textarea {
+    background-color: #e0e1dd;
+    color: #0d1b2a;
+    border: none;
 }
-
-@keyframes pulse {
-    0% { transform: scale(1); }
-    50% { transform: scale(1.05); }
-    100% { transform: scale(1); }
-}
-
-header img {
-    animation: pulse 3s infinite;
-}
-
 .social-links {
     text-align: center;
     margin: 1.5em 0;
 }
-
 .social-links a {
     margin: 0 1em;
     text-decoration: none;
@@ -93,20 +82,4 @@ header img {
 }
 .social-links a:hover {
     color: #ffffff;
-}
-
-.contact form {
-    margin-top: 1em;
-}
-
-.contact label, .contact input, .contact textarea {
-    display: block;
-    width: 100%;
-    margin-bottom: 0.75em;
-}
-
-.contact input, .contact textarea {
-    padding: 0.5em;
-    border-radius: 4px;
-    border: none;
 }
